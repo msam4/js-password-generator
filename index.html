@@ -13,9 +13,36 @@
         <input id="password" type="text" disabled>
         <span id="copy" onclick="">Copy</span>
       </div>
-      <div class="pass-settings">
-        <!-- Continue here -->
+      <div class="password-settings">
+        <label class="title">Password Setting</label>
+        <ul class="options">
+          <li class="option">
+            <input checked id="lowercase" type="checkbox">
+            <label for="lowercase">Lowercase (a ~ z)</label>
+          </li>
+          <li class="option">
+            <input id="uppercase" type="checkbox">
+            <label for="uppercase">Uppercase (A ~ Z)</label>
+          </li>
+          <li class="option">
+            <input id="numbers" type="checkbox" checked>
+            <label for="numbres">Numbers (0 ~ 9)</label>
+          </li>
+          <li class="option">
+            <input id="symbols" type="checkbox" checked>
+            <label for="symbols">Symbols (!-$^+)</label>
+          </li>
+          <li class="option">
+            <input id="exc-duplicate" type="checkbox">
+            <label for="exc-duplicate">Exclude Duplicate</label>
+          </li>
+          <li class="option">
+            <input id="spaces" type="checkbox">
+            <label for="spaces">Include Spaces</label>
+          </li>
+        </ul>
       </div>
+      <button class="generate-btn">Generate Password</button>
     </div>
   </div>
 </body>
