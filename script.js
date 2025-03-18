@@ -41,7 +41,6 @@ function generatePassword() {
   passwordInput.value = password;
 }
 
-// Fix the copy function. .execCommand no longer works
 function copyPassword() {
   const passwordInput = document.getElementById('password');
   const copyButton = document.getElementById('copy');

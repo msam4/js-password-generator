@@ -1,3 +1,12 @@
+:root {
+  --primary: #00a3c7;
+  --button: #0073b5;
+  --button-hover: #3b93c6;
+  --input-box: #66cfe3;
+  --black: #121212;
+  --white: #FFFAFA;
+}
+
 body {
   display: grid;
   place-items: center;
@@ -6,8 +15,9 @@ body {
 }
 
 .container {
+  color: var(--black);
   width: min(450px, 90%);
-  background: #8c92bb;
+  background: var(--primary);
   border-radius: 8px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -17,7 +27,7 @@ body {
   font-weight: 600;
   font-size: 1.31rem;
   padding: 1rem 1.75rem;
-  border-bottom: 1px solid #858bb2;
+  border-bottom: 1px solid var(--input-box) ;
 }
 
 .wrapper {
@@ -31,13 +41,13 @@ body {
 .input-box input {
   width: 83%;
   height: 53px;
-  color: #fff;
-  background: #858bb2;
+  color: var(--white);
+  background: var(--input-box);
   font-size: 1.06rem;
   font-weight: 500;
   border-radius: 4px;
   letter-spacing: 1.4px;
-  border: 1px solid #000;
+  border: 1px solid var(--black);
   padding: 0 2.85rem 0 1rem;
 }
 
@@ -46,11 +56,11 @@ body {
   right: 13px;
   cursor: pointer;
   line-height: 53px;
-  color: #000;
+  color: var(--black);
 }
 
 .input-box span:hover {
-  color: #46495e !important;
+  color: var(--button-hover) !important;
 }
 
 .wrapper .password-settings {
@@ -83,21 +93,21 @@ body {
 
 .options option label {
   cursor: pointer;
-  color: #000;
+  color: var(--black);
   padding-left: 0.63rem;
 }
 
 .password-settings input[type="checkbox"] {
-  accent-color: #46496e;
+  accent-color: var(--button);
 }
 
 .wrapper .generate-btn {
   width: 100%;
-  color: #fff;
+  color: var(--white);
   border: none;
   outline: none;
   cursor: pointer;
-  background: #46496e;
+  background: var(--button);
   font-size: 1.06rem;
   padding: 0.94rem 0;
   border-radius: 5px;
@@ -106,5 +116,5 @@ body {
 }
 
 .wrapper .generate-btn:hover {
-  background: #46495e;
+  background: var(--button-hover);
 }
